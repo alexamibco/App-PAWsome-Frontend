@@ -1,0 +1,495 @@
+[
+    {
+      "id": 1,
+      "imageUrl": "https://i.pinimg.com/originals/78/3c/1d/783c1d5ff918bc5efa5cb5bb16e71641.jpg",
+      "placeName": "Kittycorn's Place",
+      "category": "Hotel",
+      "details": "A wonderful and magical place in Narnia, located near Cair Paravel. This enchanted spot is perfect for cat lovers and fantasy enthusiasts, featuring whimsical decorations and charming views.",
+      "rating": 5,
+      "reviewNumbers": 100,
+      "reviews": [
+        {
+          "id": 1,
+          "user": {
+            "avatar": "https://example.com/avatar1.jpg",
+            "name": "Alice"
+          },
+          "title": "Magical Experience!",
+          "rating": 5,
+          "review": "This place is absolutely enchanting! I loved every moment spent here."
+        },
+        {
+          "id": 2,
+          "user": {
+            "avatar": "https://example.com/avatar2.jpg",
+            "name": "Bob"
+          },
+          "title": "A Must-Visit!",
+          "rating": 4,
+          "review": "Wonderful place for cat lovers. The ambiance is perfect."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://images.ctfassets.net/zx26b3gn0tiy/72NSK4ywp8IgYbjLaiLi81/71778e1b6f866a55383a0f7c3b4627b7/Dragons_Den-Bangor-Reference_540x460.jpg",
+      "placeName": "Dragon's Den",
+      "category": "More",
+      "details": "A fiery location full of adventure and excitement. Ideal for thrill-seekers, this den is surrounded by rugged mountains and offers breathtaking views of the dragon lairs.",
+      "rating": 4.8,
+      "reviewNumbers": 80,
+      "reviews": [
+        {
+          "id": 3,
+          "user": {
+            "avatar": "https://example.com/avatar3.jpg",
+            "name": "Charlie"
+          },
+          "title": "Thrilling Adventure!",
+          "rating": 5,
+          "review": "The best adventure I've ever had! The views are spectacular."
+        },
+        {
+          "id": 4,
+          "user": {
+            "avatar": "https://example.com/avatar4.jpg",
+            "name": "Dana"
+          },
+          "title": "Exciting but Crowded",
+          "rating": 4,
+          "review": "It was amazing, but a bit too crowded for my taste."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/cha-teau-de-chenonceau-1603148808.jpg?crop=0.659xw:1.00xh;0.133xw,0&resize=1200:*",
+      "placeName": "Unicorn Valley",
+      "category": "Hotel",
+      "details": "A serene and peaceful valley where unicorns roam freely. Visitors can enjoy scenic walks along crystal-clear streams and witness magical creatures in their natural habitat.",
+      "rating": 4.9,
+      "reviewNumbers": 120,
+      "reviews": [
+        {
+          "id": 5,
+          "user": {
+            "avatar": "https://example.com/avatar5.jpg",
+            "name": "Lya"
+          },
+          "title": "A Dream Come True!",
+          "rating": 5,
+          "review": "I saw a unicorn! Truly a magical place."
+        },
+        {
+          "id": 6,
+          "user": {
+            "avatar": "https://example.com/avatar6.jpg",
+            "name": "Frank"
+          },
+          "title": "Peaceful Retreat",
+          "rating": 4,
+          "review": "Perfect for a quiet getaway. Very relaxing."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://media.istockphoto.com/id/1132264290/photo/walking-path-under-the-beautiful-sakura-tree-or-cherry-tree-tunnel-in-tokyo-japan.jpg?s=612x612&w=0&k=20&c=7AaKcDJmyfbUTDQaX7CllfMKG_Ux5uLB-a8mYK6ZesM=",
+      "placeName": "Fairy Forest",
+      "category": "More",
+      "details": "An enchanting forest filled with sparkling lights and playful fairies. Ideal for families, this forest offers interactive trails and educational experiences about magical creatures.",
+      "rating": 5,
+      "reviewNumbers": 150,
+      "reviews": [
+        {
+          "id": 7,
+          "user": {
+            "avatar": "https://example.com/avatar7.jpg",
+            "name": "Grace"
+          },
+          "title": "Fun for the Whole Family!",
+          "rating": 5,
+          "review": "My kids loved it! So much to see and do."
+        },
+        {
+          "id": 8,
+          "user": {
+            "avatar": "https://example.com/avatar8.jpg",
+            "name": "Hank"
+          },
+          "title": "Charming Experience",
+          "rating": 4,
+          "review": "A lovely place, but could use more signs for the trails."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bodiam-castle-10My8-1197.jpg/288px-Bodiam-castle-10My8-1197.jpg",
+      "placeName": "Mermaid Lagoon",
+      "category": "Hotel",
+      "details": "Dive into the stunning waters of the Mermaid Lagoon, where you can swim alongside mermaids and explore vibrant coral reefs. A perfect getaway for water lovers and adventure seekers.",
+      "rating": 4.7,
+      "reviewNumbers": 90,
+      "reviews": [
+        {
+          "id": 9,
+          "user": {
+            "avatar": "https://example.com/avatar9.jpg",
+            "name": "Ivy"
+          },
+          "title": "Absolutely Beautiful!",
+          "rating": 5,
+          "review": "The water is crystal clear! A magical place for swimming."
+        },
+        {
+          "id": 10,
+          "user": {
+            "avatar": "https://example.com/avatar10.jpg",
+            "name": "Jack"
+          },
+          "title": "Great Experience!",
+          "rating": 4,
+          "review": "Loved swimming with the mermaids! Highly recommend."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://voila.ar/wp-content/uploads/2023/04/Centauro-restaurante.jpg",
+      "placeName": "Centaur Meadows",
+      "category": "Restaurant",
+      "details": "Experience the wild beauty of Centaur Meadows, where majestic centaurs gallop freely across vast plains. Engage in outdoor activities like horseback riding and hiking.",
+      "rating": 4.6,
+      "reviewNumbers": 75,
+      "reviews": [
+        {
+          "id": 11,
+          "user": {
+            "avatar": "https://example.com/avatar11.jpg",
+            "name": "Lya"
+          },
+          "title": "A Unique Adventure!",
+          "rating": 5,
+          "review": "Riding alongside centaurs was an unforgettable experience!"
+        },
+        {
+          "id": 12,
+          "user": {
+            "avatar": "https://example.com/avatar12.jpg",
+            "name": "Mia"
+          },
+          "title": "Breathtaking Views",
+          "rating": 4,
+          "review": "The scenery is gorgeous. A must-see for nature lovers."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/11/d8/bd/fb/um-restaurante-baseado.jpg",
+      "placeName": "Gnome Village",
+      "category": "Restaurant",
+      "details": "A quaint village inhabited by friendly gnomes, offering visitors a chance to learn about their crafts and lifestyle. Perfect for a family outing with hands-on workshops.",
+      "rating": 4.5,
+      "reviewNumbers": 60,
+      "reviews": [
+        {
+          "id": 13,
+          "user": {
+            "avatar": "https://example.com/avatar13.jpg",
+            "name": "Nora"
+          },
+          "title": "Charming Village!",
+          "rating": 5,
+          "review": "So cute and fun! My kids enjoyed the workshops."
+        },
+        {
+          "id": 14,
+          "user": {
+            "avatar": "https://example.com/avatar14.jpg",
+            "name": "Owen"
+          },
+          "title": "Pleasant Visit",
+          "rating": 4,
+          "review": "A lovely place to explore, but not too much to do."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://www.ahstatic.com/photos/5451_ho_00_p_1024x768.jpg",
+      "placeName": "Phoenix Peak",
+      "category": "Hotel",
+      "details": "Hike to the breathtaking Phoenix Peak, where legends say the mythical phoenix nests. Enjoy panoramic views and the chance to spot wildlife in this pristine area.",
+      "rating": 4.9,
+      "reviewNumbers": 110,
+      "reviews": [
+        {
+          "id": 15,
+          "user": {
+            "avatar": "https://example.com/avatar15.jpg",
+            "name": "Paula"
+          },
+          "title": "Stunning Views!",
+          "rating": 5,
+          "review": "The hike was challenging but worth it for the views."
+        },
+        {
+          "id": 16,
+          "user": {
+            "avatar": "https://example.com/avatar16.jpg",
+            "name": "Quinn"
+          },
+          "title": "Amazing Experience",
+          "rating": 4,
+          "review": "A great hike with beautiful scenery. Highly recommend."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://pics.craiyon.com/2023-06-27/68c87c60a94c4b349c0adf172a9f6c5d.webp",
+      "placeName": "Sunset Grill",
+      "category": "Restaurant",
+      "details": "Enjoy a delightful dining experience with sunset views at Sunset Grill. Specializing in fresh seafood and local cuisine, it’s a must-visit for food lovers.",
+      "rating": 4.7,
+      "reviewNumbers": 85,
+      "reviews": [
+        {
+          "id": 17,
+          "user": {
+            "avatar": "https://example.com/avatar17.jpg",
+            "name": "Alice"
+          },
+          "title": "Great Food!",
+          "rating": 5,
+          "review": "The seafood was incredibly fresh and delicious!"
+        },
+        {
+          "id": 18,
+          "user": {
+            "avatar": "https://example.com/avatar18.jpg",
+            "name": "Mark"
+          },
+          "title": "Lovely Atmosphere",
+          "rating": 4,
+          "review": "A perfect spot for a romantic dinner."
+        },
+        {
+          "id": 19,
+          "user": {
+            "avatar": "https://example.com/avatar19.jpg",
+            "name": "Olivia"
+          },
+          "title": "Perfect for Families",
+          "rating": 5,
+          "review": "Great kids' menu and friendly staff!"
+        },
+        {
+          "id": 20,
+          "user": {
+            "avatar": "https://example.com/avatar20.jpg",
+            "name": "Lucas"
+          },
+          "title": "Exceptional Service",
+          "rating": 4,
+          "review": "The waitstaff were attentive and helpful."
+        },
+        {
+          "id": 21,
+          "user": {
+            "avatar": "https://example.com/avatar21.jpg",
+            "name": "Mia"
+          },
+          "title": "A Hidden Gem",
+          "rating": 5,
+          "review": "I stumbled upon this place and I'm so glad I did!"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://img.pikbest.com/wp/202344/vibrant-abstract-background-shimmering-gold-glitter-texture-with-blurred-colorful-hues_9917476.jpg!w700wp",
+      "placeName": "Shimmering Mall",
+      "category": "Shopping",
+      "details": "Shimmering Mall offers a wide variety of shops, from high-end boutiques to popular retail chains. It’s the perfect destination for a shopping spree.",
+      "rating": 4.5,
+      "reviewNumbers": 200,
+      "reviews": [
+        {
+          "id": 22,
+          "user": {
+            "avatar": "https://example.com/avatar22.jpg",
+            "name": "Sophie"
+          },
+          "title": "Great Variety!",
+          "rating": 5,
+          "review": "You can find everything you need in one place!"
+        },
+        {
+          "id": 23,
+          "user": {
+            "avatar": "https://example.com/avatar23.jpg",
+            "name": "David"
+          },
+          "title": "Clean and Organized",
+          "rating": 4,
+          "review": "The mall is well-maintained and easy to navigate."
+        },
+        {
+          "id": 24,
+          "user": {
+            "avatar": "https://example.com/avatar24.jpg",
+            "name": "Ella"
+          },
+          "title": "Fun Day Out",
+          "rating": 5,
+          "review": "Had a wonderful time shopping with friends!"
+        },
+        {
+          "id": 25,
+          "user": {
+            "avatar": "https://example.com/avatar25.jpg",
+            "name": "Jack"
+          },
+          "title": "Good Food Court",
+          "rating": 4,
+          "review": "A lot of choices to grab a bite while shopping."
+        },
+        {
+          "id": 26,
+          "user": {
+            "avatar": "https://example.com/avatar26.jpg",
+            "name": "Chloe"
+          },
+          "title": "Best Deals!",
+          "rating": 5,
+          "review": "Found amazing discounts on clothing!"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "imageUrl": "https://i.pinimg.com/474x/26/af/ce/26afced3ada6ad6a5bd6cc83243b25ec.jpg",
+      "placeName": "Cozy Inn",
+      "category": "Hotel",
+      "details": "Cozy Inn offers a warm and inviting atmosphere, perfect for travelers seeking comfort. Enjoy complimentary breakfast and a peaceful night's sleep.",
+      "rating": 4.8,
+      "reviewNumbers": 95,
+      "reviews": [
+        {
+          "id": 27,
+          "user": {
+            "avatar": "https://example.com/avatar27.jpg",
+            "name": "Emma"
+          },
+          "title": "Home Away From Home",
+          "rating": 5,
+          "review": "The staff was incredibly friendly, and the rooms were spotless."
+        },
+        {
+          "id": 28,
+          "user": {
+            "avatar": "https://example.com/avatar28.jpg",
+            "name": "Lya"
+          },
+          "title": "Perfect Stay!",
+          "rating": 4,
+          "review": "Great location and very comfortable."
+        },
+        {
+          "id": 29,
+          "user": {
+            "avatar": "https://example.com/avatar29.jpg",
+            "name": "Sophia"
+          },
+          "title": "Nice Amenities",
+          "rating": 5,
+          "review": "Loved the pool and fitness center!"
+        },
+        {
+          "id": 30,
+          "user": {
+            "avatar": "https://example.com/avatar30.jpg",
+            "name": "Ethan"
+          },
+          "title": "Affordable Prices",
+          "rating": 4,
+          "review": "Excellent value for the money!"
+        },
+        {
+          "id": 31,
+          "user": {
+            "avatar": "https://example.com/avatar31.jpg",
+            "name": "Ava"
+          },
+          "title": "Cozy and Clean",
+          "rating": 5,
+          "review": "Everything was perfect during my stay."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvUOjPAw1KHETEUWE8vVhkbD19kq9XDsNBdA&s",
+      "placeName": "The Magical Portal",
+      "category": "Restaurant",
+      "details": "Step back in time at The Vintage Diner, where classic American cuisine meets retro decor. Famous for its burgers and milkshakes!",
+      "rating": 4.6,
+      "reviewNumbers": 120,
+      "reviews": [
+        {
+          "id": 32,
+          "user": {
+            "avatar": "https://example.com/avatar32.jpg",
+            "name": "Lya"
+          },
+          "title": "Nostalgic Experience",
+          "rating": 5,
+          "review": "The atmosphere is so fun, and the food is amazing!"
+        },
+        {
+          "id": 33,
+          "user": {
+            "avatar": "https://example.com/avatar33.jpg",
+            "name": "Ethan"
+          },
+          "title": "Delicious Burgers",
+          "rating": 4,
+          "review": "Best burgers in town, hands down!"
+        },
+        {
+          "id": 34,
+          "user": {
+            "avatar": "https://example.com/avatar34.jpg",
+            "name": "Olivia"
+          },
+          "title": "Great Milkshakes",
+          "rating": 5,
+          "review": "Their milkshakes are to die for!"
+        },
+        {
+          "id": 35,
+          "user": {
+            "avatar": "https://example.com/avatar35.jpg",
+            "name": "James"
+          },
+          "title": "Friendly Staff",
+          "rating": 4,
+          "review": "Everyone was so welcoming and attentive."
+        },
+        {
+          "id": 36,
+          "user": {
+            "avatar": "https://example.com/avatar36.jpg",
+            "name": "Emma"
+          },
+          "title": "Fast Service",
+          "rating": 5,
+          "review": "Food came out quickly and was piping hot."
+        }
+      ]
+    }    
+  ]
+  
