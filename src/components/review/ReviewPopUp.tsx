@@ -1,19 +1,31 @@
 import { useEffect, useState } from "react";
-import { Button , StarsSelector } from "../../components";
+import { Button, StarsSelector } from "../../components";
 import { useAuthStore } from "../../store/AuthStore";
 
 interface ReviewPopUpProps {
   placeId: string | undefined;
-  userId: string | undefined |null;
-  reviewToEdit: { id: string; title: string; content: string; rating: number } | null;
-  onSubmit: () => void; 
+  userId: string | undefined | null;
+  reviewToEdit: {
+    id: string;
+    title: string;
+    content: string;
+    rating: number;
+  } | null;
+  onSubmit: () => void;
 }
 
-export const ReviewPopUp: React.FC<ReviewPopUpProps> = ({placeId, userId, reviewToEdit, onSubmit }) => {
+export const ReviewPopUp: React.FC<ReviewPopUpProps> = ({
+  placeId,
+  userId,
+  reviewToEdit,
+  onSubmit,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [rating, setRating] = useState(reviewToEdit?.rating || 0);
   const [reviewTitle, setReviewTitle] = useState(reviewToEdit?.title || "");
-  const [reviewContent, setReviewContent] = useState(reviewToEdit?.content || "");
+  const [reviewContent, setReviewContent] = useState(
+    reviewToEdit?.content || ""
+  );
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
 
   const togglePopup = () => {
@@ -53,26 +65,32 @@ export const ReviewPopUp: React.FC<ReviewPopUpProps> = ({placeId, userId, review
     try {
       if (reviewToEdit) {
         // Editar
-        const response = await fetch(`http://localhost:3000/reviews/${reviewToEdit.id}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newReview),
-        });
+        const response = await fetch(
+          `https://app-pawsome-backend.onrender.com/reviews/${reviewToEdit.id}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newReview),
+          }
+        );
 
         if (!response.ok) {
           throw new Error("Failed to update review");
         }
       } else {
         // Crear
-        const response = await fetch("http://localhost:3000/reviews", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newReview),
-        });
+        const response = await fetch(
+          "https://app-pawsome-backend.onrender.com/reviews",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newReview),
+          }
+        );
 
         if (!response.ok) {
           throw new Error("Failed to submit review");
@@ -80,10 +98,10 @@ export const ReviewPopUp: React.FC<ReviewPopUpProps> = ({placeId, userId, review
       }
 
       setIsOpen(false);
-      setReviewTitle(""); 
-      setReviewContent(""); 
-      setRating(0); 
-      onSubmit(); 
+      setReviewTitle("");
+      setReviewContent("");
+      setRating(0);
+      onSubmit();
       window.location.reload();
     } catch (error) {
       console.error(error);
@@ -94,7 +112,10 @@ export const ReviewPopUp: React.FC<ReviewPopUpProps> = ({placeId, userId, review
   return (
     <div className="w-full relative">
       <div className="cursor-pointer" onClick={togglePopup}>
-        <Button text={reviewToEdit ? "Edit Review" : "Write a Review"} className="w-full" />
+        <Button
+          text={reviewToEdit ? "Edit Review" : "Write a Review"}
+          className="w-full"
+        />
       </div>
 
       {isOpen && (
@@ -123,7 +144,7 @@ export const ReviewPopUp: React.FC<ReviewPopUpProps> = ({placeId, userId, review
 
             <div className="mt-4 mb-4">
               <h1 className="font-semibold font-playpen text-center text-3xl text-title my-3">
-              {reviewToEdit ? "Edit My PAWsome Review" : "My PAWsome Review"}
+                {reviewToEdit ? "Edit My PAWsome Review" : "My PAWsome Review"}
               </h1>
               <div className="flex flex-row justify-between">
                 <span className="font-dosis text-accent font-semibold text-xl">

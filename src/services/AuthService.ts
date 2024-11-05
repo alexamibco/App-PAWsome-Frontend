@@ -1,6 +1,9 @@
-import { SignUpRequest, SignUpResponse } from "../types/Authentication/AuthService.types";
+import {
+  SignUpRequest,
+  SignUpResponse,
+} from "../types/Authentication/AuthService.types";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://app-pawsome-backend.onrender.com";
 
 export const login = async (email: string, password: string) => {
   const response = await fetch(`${BASE_URL}/login`, {
@@ -18,7 +21,9 @@ export const login = async (email: string, password: string) => {
   return response.json();
 };
 
-export const signUp = async (params: SignUpRequest): Promise<SignUpResponse> => {
+export const signUp = async (
+  params: SignUpRequest
+): Promise<SignUpResponse> => {
   const response = await fetch(`${BASE_URL}/signup`, {
     method: "POST",
     headers: {

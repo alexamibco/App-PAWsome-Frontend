@@ -1,51 +1,62 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 interface UserCardProps {
   name: string;
   lastName: string;
   email: string;
   avatar?: string;
-  userId: string | null; 
+  userId: string | null;
 }
 
-export const UserCard: React.FC<UserCardProps> = ({ name, lastName, email, avatar, userId }) => {
+export const UserCard: React.FC<UserCardProps> = ({
+  name,
+  lastName,
+  email,
+  avatar,
+  userId,
+}) => {
   const [currentAvatar, setCurrentAvatar] = useState(avatar);
-  
+
   const changeProfileImage = async () => {
-    const fileInput = document.createElement('input');
-    fileInput.type = 'file';
-    fileInput.accept = 'image/jpeg, image/png';
-    
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.accept = "image/jpeg, image/png";
+
     fileInput.onchange = async (event) => {
-      const files = (event.target as HTMLInputElement).files; 
+      const files = (event.target as HTMLInputElement).files;
       if (files && files.length > 0) {
         const file = files[0];
         const formData = new FormData();
-        formData.append('file', file);
+        formData.append("file", file);
         if (userId) {
-          formData.append('userId', userId); 
+          formData.append("userId", userId);
         }
 
         try {
-          const response = await fetch('http://localhost:3000/upload', {
-            method: 'POST',
-            body: formData,
-          });
+          const response = await fetch(
+            "https://app-pawsome-backend.onrender.com/upload",
+            {
+              method: "POST",
+              body: formData,
+            }
+          );
 
           if (!response.ok) {
-            throw new Error('Failed to upload image');
+            throw new Error("Failed to upload image");
           }
 
           const result = await response.json();
-          console.log(result); 
-          setCurrentAvatar(result.result.secure_url); 
+          console.log(result);
+          setCurrentAvatar(result.result.secure_url);
         } catch (err) {
-          console.error(err instanceof Error ? err.message : 'An error occurred');
+          console.error(
+            err instanceof Error ? err.message : "An error occurred"
+          );
         }
       }
     };
 
-    fileInput.click(); 
+    fileInput.click();
   };
 
   return (

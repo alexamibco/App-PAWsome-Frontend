@@ -32,7 +32,6 @@ export const PlaceDetails: React.FC = () => {
 
   const handleReviewSubmit = async () => {
     if (reviewToEdit) {
-
       const updatedReview = {
         ...reviewToEdit,
         user_id: userId,
@@ -41,7 +40,7 @@ export const PlaceDetails: React.FC = () => {
 
       try {
         const response = await fetch(
-          `http://localhost:3000/reviews/${reviewToEdit.id}`,
+          `https://app-pawsome-backend.onrender.com/reviews/${reviewToEdit.id}`,
           {
             method: "PUT",
             headers: {
@@ -57,7 +56,7 @@ export const PlaceDetails: React.FC = () => {
         if (!id) return;
         const updatedPlace = await fetchPlaceDetails(id);
         setPlace(updatedPlace);
-        setReviewToEdit(null); 
+        setReviewToEdit(null);
       } catch (error) {
         console.error(error);
       }
@@ -95,9 +94,12 @@ export const PlaceDetails: React.FC = () => {
 
   const handleDelete = async (reviewId: string) => {
     try {
-      await fetch(`http://localhost:3000/reviews/${reviewId}`, {
-        method: "DELETE",
-      });
+      await fetch(
+        `https://app-pawsome-backend.onrender.com/reviews/${reviewId}`,
+        {
+          method: "DELETE",
+        }
+      );
       setPlace((prevPlace) => {
         if (!prevPlace) return null;
         return {

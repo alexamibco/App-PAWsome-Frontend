@@ -1,6 +1,6 @@
-const BASE_URL = "http://localhost:3000"; 
+const BASE_URL = "https://app-pawsome-backend.onrender.com";
 
-export const fetchUserById = async (userId:string) => {
+export const fetchUserById = async (userId: string) => {
   try {
     const response = await fetch(`${BASE_URL}/users/${userId}`);
 
@@ -12,6 +12,6 @@ export const fetchUserById = async (userId:string) => {
     return userData;
   } catch (error) {
     console.error(error);
-    return null; 
+    return null;
   }
 };

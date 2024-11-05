@@ -46,13 +46,16 @@ export const UserProfile = () => {
   const handleSaveChanges = async () => {
     if (updatedUser && userId) {
       try {
-        const response = await fetch(`http://localhost:3000/users/${userId}`, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(updatedUser),
-        });
+        const response = await fetch(
+          `https://app-pawsome-backend.onrender.com/users/${userId}`,
+          {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(updatedUser),
+          }
+        );
         if (response.ok) {
           const data = await response.json();
           setUser(data);
@@ -66,16 +69,19 @@ export const UserProfile = () => {
   };
 
   const handleLogout = async () => {
-    await logout(); 
-    window.location.reload(); 
+    await logout();
+    window.location.reload();
   };
 
   const handleDeleteUser = async () => {
     if (userId) {
       try {
-        const response = await fetch(`http://localhost:3000/users/${userId}`, {
-          method: "DELETE",
-        });
+        const response = await fetch(
+          `https://app-pawsome-backend.onrender.com/users/${userId}`,
+          {
+            method: "DELETE",
+          }
+        );
         if (response.ok) {
           logout();
         } else {
@@ -106,7 +112,7 @@ export const UserProfile = () => {
               lastName={user.user_lastname}
               email={user.user_email}
               avatar={user.user_avatar}
-              userId={userId} 
+              userId={userId}
             />
           </div>
           <div>
@@ -122,12 +128,16 @@ export const UserProfile = () => {
                 className="w-[15.625rem] h-[3.75rem]"
                 onClick={handleSaveChanges}
               />
-              <button className="font-medium hover:text-primary font-playpen text-base"
-              onClick={handleLogout}>
+              <button
+                className="font-medium hover:text-primary font-playpen text-base"
+                onClick={handleLogout}
+              >
                 Close my session
               </button>
-              <button className="text-accent font-medium font-playpen text-base"
-              onClick={() => setShowDeleteModal(true)}>
+              <button
+                className="text-accent font-medium font-playpen text-base"
+                onClick={() => setShowDeleteModal(true)}
+              >
                 Delete my user
               </button>
             </div>
@@ -141,7 +151,9 @@ export const UserProfile = () => {
             <h2 className="text-xl font-semibold text-center mb-4">
               Confirm Deletion
             </h2>
-            <p className="text-center mb-6">Are you sure you want to delete your account?</p>
+            <p className="text-center mb-6">
+              Are you sure you want to delete your account?
+            </p>
             <div className="flex justify-around">
               <Button
                 onClick={handleDeleteUser}
@@ -157,8 +169,6 @@ export const UserProfile = () => {
           </div>
         </div>
       )}
-
-
     </>
   );
 };
