@@ -30,7 +30,6 @@ export const PlaceCard: React.FC<PlaceCardProps> = ({
         <div className="flex flex-col">
           <div className="flex flex-row justify-between">
             <p className="font-semibold text-base text-title truncate">{placeName}</p>
-            <div className="flex flex-row items-center"><Stars rating={rating} /> <span className="text-xs text-text">({reviewNumbers})</span></div>
           </div>
           <div className="flex flex-row items-center font-normal text-xs text-text">
             <p className="truncate pb-2">{details}</p>

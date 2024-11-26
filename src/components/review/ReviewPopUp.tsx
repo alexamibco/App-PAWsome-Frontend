@@ -64,7 +64,6 @@ export const ReviewPopUp: React.FC<ReviewPopUpProps> = ({
 
     try {
       if (reviewToEdit) {
-        // Editar
         const response = await fetch(
           `https://app-pawsome-backend.onrender.com/reviews/${reviewToEdit.id}`,
           {
@@ -80,7 +79,6 @@ export const ReviewPopUp: React.FC<ReviewPopUpProps> = ({
           throw new Error("Failed to update review");
         }
       } else {
-        // Crear
         const response = await fetch(
           "https://app-pawsome-backend.onrender.com/reviews",
           {
