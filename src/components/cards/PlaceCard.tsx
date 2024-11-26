@@ -13,8 +13,6 @@ export const PlaceCard: React.FC<PlaceCardProps> = ({
   imageUrl,
   placeName,
   details,
-  rating,
-  reviewNumbers,
   id
 }) => {
   return (
